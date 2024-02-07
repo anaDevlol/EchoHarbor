@@ -1,6 +1,5 @@
 *.json
 *.js
 node_modules/
-public/scripts/
 public/scripts/*.js
 .DS_Store
