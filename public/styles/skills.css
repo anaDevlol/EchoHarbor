@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background: linear-gradient(0.25turn,#fff,#ccc);
+   
+}
+
+header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:rgba(0, 0, 0, 0.926);
+    backdrop-filter: blur(20px);
+    border: 1px solid;
+}
+.fonts{
+    font-family: 'Amarante', serif;
+}
+nav a{
+    position: relative;
+    display: inline-flex;
+    transition: all .5s ease;
+    overflow: hidden;
+    border-radius: 40px;
+    opacity: 1;
+}
+a{
+    padding: 0 18px;
+    text-decoration: none;
+    font-size: 20px;
+    background: linear-gradient(0.25turn,#fff,#a4a4a4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+nav a::before, nav a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 4px;
+    background: blue;
+    transition:all .5s ease;
+    opacity: 0;
+    
+}
+nav a:hover{
+    transition:all .5s ease;
+    opacity: 1;
+    color: white;
+    text-shadow: 0 0 10px ;
+}
+.continer{
+    margin: 7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+h3{
+    font-size: 33px;
+    background: linear-gradient(0.25turn,#969595,#fff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 1px -12px 1px rgb(0, 0, 0);
+}
+p{
+    max-width: 200%;
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 1.7em;
+    background: linear-gradient(0.25turn,#969595,#fff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.IconSkills{
+    margin-top: 60px;
+    padding: 10px;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+.IconSkills figure{ 
+   display: inline;
+    margin: 20px;
+}
+figure img{
+    width: auto;
+    max-width: 100%;
+    height: 5em;
+}
+figure figcaption{ 
+    padding-top: 10px;
+}
